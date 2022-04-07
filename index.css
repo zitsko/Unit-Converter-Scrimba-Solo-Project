@@ -96,8 +96,3 @@ input[type=number] {
    font-style: normal;  
 }  
 
-@media  (min-width: 724px){
-    .heading{
-   margin-top:2rem;
-    }
-}
