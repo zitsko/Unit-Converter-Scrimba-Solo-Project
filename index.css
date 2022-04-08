@@ -11,12 +11,25 @@ html, body {
     --fs-number: 2rem;
 }
 
+.background-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
+
+}
 .container{
-     display:grid;
-     grid-template-rows: 1fr 1fr; 
-     width: 100vw;
-     height: 100vh;
+     display:flex;
+     flex-direction: column; 
+     justify-content: center;
+     align-items: center;
+     width: 34.357rem;
+     height: 34.375rem;
      margin:0 auto;
+     /*width: 650px;
+     height:550px;*/
 
 }
 
@@ -25,7 +38,8 @@ html, body {
     flex-direction: column;
     justify-content: space-around;
     background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
-    
+    height: 16.25rem;
+    width:100%
    
 }
 
@@ -76,6 +90,10 @@ input[type=number] {
 
 .units-conversion{
     background: #1F2937;   
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 18.125rem;
 }
 
 .units{
@@ -96,3 +114,10 @@ input[type=number] {
    font-style: normal;  
 }  
 
+@media  (max-width: 600px){
+  .container{
+   width:100vw;
+   height:100vh;
+   
+    }
+}
