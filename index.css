@@ -37,8 +37,7 @@ html, body {
   font-style: normal;
   letter-spacing: -0.05em;
   line-height: 38px;
-  text-transform: uppercase;
-  
+  text-transform: capitalize;
 }
 
 form  {    
