@@ -102,7 +102,7 @@ font-size: var(--fs-text);
  font-style: normal;  
 }  
 
-@media  (min-width: 600px){
+@media  (min-width: 840px){
 .container{
  max-width:37.5rem;
  max-height:37.5rem;
