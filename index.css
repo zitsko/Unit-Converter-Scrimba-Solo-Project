@@ -104,8 +104,8 @@ font-size: var(--fs-text);
 
 @media  (min-width: 860px){
 .container{
- max-width:37.5rem;
- max-height:37.5rem;
+ max-width:53.75rem;
+ max-height:53.75rem;
  justify-content: center;
   
   margin: 2.5rem auto;
