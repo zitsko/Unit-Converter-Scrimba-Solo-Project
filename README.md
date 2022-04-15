@@ -10,10 +10,7 @@ This is my solution to the Unit Converter Solo Project challenge on Scrimba.
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
@@ -42,6 +39,13 @@ for conversion.
 - Flexbox
 - Mobile-first workflow
 - Javascript
+
+
+### Useful resources
+
+- [Scrimba](https://scrimba.com/) - Scrimba is an amazing platform for learning frontend web development. I am currently learning by their FrontEnd Developer Carrer Path
+- [MDN](https://developer.mozilla.org/en-US/) - MDN is a great resource for frontend web development.
+
 
 ## Acknowledgments
 Scrimba's discord channel code reviews is very helpfull for writing and checking your code.
