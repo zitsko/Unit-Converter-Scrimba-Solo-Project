@@ -1,49 +1,49 @@
-const conversionNumber = document.getElementById("number-input")
+const input = document.getElementById("number-input")
 const convertedLength = document.getElementById("length-conversion")
 const convertedVolume = document.getElementById("volume-conversion")
 const convertedMass = document.getElementById("mass-conversion")
 
+function multiply(numberInput, multiplicand) {
+    let result = (numberInput * multiplicand).toFixed(3);
+    return result
+}
 
-function convertLength(){
-    const metersToFeet = conversionNumber.value * 3.281
-    const metersToFeetRounded = metersToFeet.toFixed(3)
-    const feetToMeters =conversionNumber.value / 3.281
-    const feetToMetersRounded= feetToMeters.toFixed(3)
+function division(numberInput, divisor) {
+  let result = (numberInput / divisor).toFixed(3);
+  return result; 
+}
+
+function calcLength(){
+    const metersToFeet = multiply(input.value,3.281)
+    const feetToMeters = division(input.value,3.281)
     return `
-   ${conversionNumber.value} meters = ${metersToFeetRounded} feet | 
-   ${conversionNumber.value} feet = ${feetToMetersRounded} meters
+   ${input.value} meters = ${metersToFeet} feet | 
+   ${input.value} feet = ${feetToMeters} meters
   `
-  }
+}
   
-function convertVolume(){
-    const litersToGalons = conversionNumber.value * 0.219
-    const litersToGalonsRounded = litersToGalons.toFixed(3)
-    const galonsToLiters = conversionNumber.value / 0.219
-    const galonsToLitersRounded = galonsToLiters.toFixed(3)
+function calcVolume(){
+    const litersToGalons = multiply(input.value, 0.219)
+    const galonsToLiters = division(input.value, 0.219)
     return `
-    ${conversionNumber.value} liters = ${litersToGalonsRounded} galons | 
-    ${conversionNumber.value} galons = ${galonsToLitersRounded} liters
+    ${input.value} liters = ${litersToGalons} galons | 
+    ${input.value} galons = ${galonsToLiters} liters
      `
 }
 
-function convertMass(){
-    const kilogramsToPounds = conversionNumber.value * 2.205
-    const kilogramsToPoundsRounded = kilogramsToPounds.toFixed(3)
-    const poundsToKilograms = conversionNumber.value / 2.205
-    const poundsToKilogramsRounded= poundsToKilograms.toFixed(3)
+function calcMass(){
+    const kilogramsToPounds = multiply(input.value,  2.205)
+    const poundsToKilograms = division(input.value , 2.205)
     return `
-    ${conversionNumber.value} kilograms = ${kilogramsToPoundsRounded} pounds | 
-    ${conversionNumber.value} pounds = ${poundsToKilogramsRounded} kilograms
+    ${input.value} kilograms = ${kilogramsToPounds} pounds | 
+    ${input.value} pounds = ${poundsToKilograms} kilograms
     `  
 }
 
- 
 document.addEventListener("input",displayConvertedUnits)
 
-
 function displayConvertedUnits(){
- convertedLength.textContent= convertLength()
- convertedVolume.textContent= convertVolume()
- convertedMass.textContent= convertMass()
+ convertedLength.textContent= calcLength()
+ convertedVolume.textContent= calcVolume()
+ convertedMass.textContent= calcMass()
 }
- 
