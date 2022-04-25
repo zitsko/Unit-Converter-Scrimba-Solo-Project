@@ -112,3 +112,20 @@ font-size: var(--fs-text);
  
   }
 }
+ @media  (orientation:landscape){
+    .container{
+     display: flex;
+     flex-direction: row;   
+    }
+    .heading{
+      height:100vh;
+      width:55%
+    }
+ 
+
+    .units-conversion{
+      height:100vh;
+      width: 45%;
+    }
+    
+  }
