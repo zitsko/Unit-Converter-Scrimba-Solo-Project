@@ -105,7 +105,7 @@ font-size: var(--fs-text);
 @media    (orientation:landscape){
   .container{
     flex-direction: column;
-   max-width:53.75rem;
+   max-width:53.8rem;
    height:100vh;
   
     }
