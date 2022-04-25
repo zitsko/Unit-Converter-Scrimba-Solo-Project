@@ -113,11 +113,11 @@ font-size: var(--fs-text);
     }
     
     .heading{
-      height:60vh;
+      height:100%;
 
     }
     .units-conversion{
-      height:90vh;
+      height:100%;
     }
   }
 
