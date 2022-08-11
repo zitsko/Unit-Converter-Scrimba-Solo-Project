@@ -20,7 +20,7 @@ This is my solution to the Unit Converter Solo Project challenge on Scrimba.
 Users should be able to:
 
 - Insert a number in the input field for conversion between metric and imperial units
-- See that number converted in tree occasions such as mass,length and volume.
+- See that number converted in three occasions such as mass,length and volume.
 
 ### Links
 
